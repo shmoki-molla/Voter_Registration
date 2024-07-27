@@ -30,8 +30,6 @@ class Data:
     def get_all(self):
         print(self.year, self.states, self.votes)
 
-    def bar_chart(self):
-        return 1
 
 data = Data()
 
@@ -58,7 +56,6 @@ def knopki():
 
 def start():
     data.set_votes(get_values_by_year_and_states(data.year, data.states))
-    print(months)
     data.get_all()
     num_months = len(months)
     num_states = len(data.states)
